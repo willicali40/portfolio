@@ -1,0 +1,117 @@
+:root {
+    --dark-background-color: #161616;
+    --light-background-color: #222121;
+    --btns-color: #14FFEC;
+    --others-color: #0D7377;
+    --typography-color: #fff;
+    --biggest-font-size: 700;
+    --medium-font-size: 600;
+    --regular-font-size: 500;
+    --light-font-size: 400;
+    --small-font-size: 300;
+    --x-small-font-size: 200;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    background-color: var(--dark-background-color);
+    color: var(--typography-color);
+}
+
+.app__container {
+    width: 85%;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.app__profile-photo {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin: 1rem auto;
+}
+
+header h2 {
+    margin: .5rem auto;
+}
+
+.app__social-links {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: .5rem auto 0;
+}
+
+.app__social-links ul {
+    display: flex;
+    margin: .5rem auto;
+}
+
+.app__social-links ul li {
+    list-style: none;
+    margin: .3rem;
+}
+
+.app__social-links-icons {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.downloadCvBtn {
+    margin: .5rem auto;
+    width: 8rem;
+    height: 2.8rem;
+    background-color: var(--btns-color);
+    border-radius: .5rem;
+    border: none;
+}
+
+nav {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    margin: .5rem auto;
+    padding: .5rem;
+    background-color: var(--light-background-color);
+    border-radius: .5rem;
+}
+
+nav ul {
+    display: flex;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style: none;
+    margin: .3rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--typography-color);
+    font-size: .8rem;
+}
