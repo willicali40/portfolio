@@ -1,37 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>William David | Developer</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/transition-style" />
+  </head>
+  <body>
     <div class="app__container">
-        <header>
-            <img class="app__profile-photo" src="./assets/pexels-pixabay-220453.jpg" alt="Developer Photo">
-            <h2>William David</h2>
-            <p>Web Developer | Frontend</p>
-            <div class="app__social-links">
-                <ul>
-                    <li><a href=""><img class="app__social-links-icons" src="./assets/linkedin.png" alt="linkedin icon"></a></li>
-                    <li><a href=""><img class="app__social-links-icons" src="./assets/github.png" alt="github icon"></a></li>
-                </ul>
-            </div>
-            <input class="downloadCvBtn" type="button" value="Descargar cv">
-        </header>
-            <nav>
-                <ul>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Certificates</a></li>
-                    <li><a href="">Technologies</a></li>
-                </ul>
-            </nav>
-
+      <header>
+        <img
+          class="app__profile-photo"
+          src="./assets/pexels-pixabay-220453.jpg"
+          alt="Developer Photo"
+        />
+        <h2>William David</h2>
+        <p>Web Developer | Frontend</p>
+        <div class="app__social-links">
+          <ul>
+            <li>
+              <a href=""
+                ><img
+                  class="app__social-links-icons"
+                  src="./assets/linkedin.png"
+                  alt="linkedin icon"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  class="app__social-links-icons"
+                  src="./assets/github.png"
+                  alt="github icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <input class="app__downloadCvBtn" type="button" value="Download cv" />
+      </header>
+      <nav>
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#technologies">Technologies</a></li>
+        </ul>
+      </nav>
+      <main>
+        <!-- projects -->
+        <div class="app__projects" id="projects">
+          <div class="app__project-container">
+            <a href="https://luxury-dango-0ccb37.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/YouTubeClone.PNG" alt="Project Picture">
+            </a>
+          </div>
+          <div class="app__project-container">
+            <a href="https://melodious-faun-5021fc.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/Movieland.PNG" alt="Project Picture">
+            </a>
+          </div>
+          <div class="app__project-container">
+            <a href="https://bespoke-gnome-0330ee.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/Octocat.PNG" alt="Project Picture">
+            </a>
+          </div>
+          <div class="app__project-container">
+            <a href="https://majestic-arithmetic-c0e8fd.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/Geritch.PNG" alt="Project Picture">
+            </a>
+          </div>
+          <div class="app__project-container">
+            <a href="https://kaleidoscopic-stardust-06cf57.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/Gpt-3.PNG" alt="Project Picture">
+            </a>
+          </div>
+          <div class="app__project-container">
+            <a href="https://incandescent-dolphin-5a354f.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/Mp3.PNG" alt="Project Picture">
+            </a>
+          </div>
+          <div class="app__project-container">
+            <a href="https://lucent-capybara-06a61e.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/PswrdGenerator.PNG" alt="Project Picture">
+            </a>
+          </div>
+        </div>
+        <!-- certificates -->
+        <div class="app__certificates" id="certificates">
+          <div class="app__certificate-container">
+            <a href="https://platzi.com/p/williamdar/curso/2332-javascript-poo/diploma/detalle/" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/certificates/POO.PNG" alt="Project Picture">
+            </a>
+          </div>
+          <div class="app__certificate-container">
+            <a href="https://platzi.com/p/williamdar/curso/2199-web-components-javascript/diploma/detalle/" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/certificates/WebComponents.PNG" alt="Project Picture">
+            </a>
+          </div>
+          <div class="app__certificate-container">
+            <a href="https://platzi.com/p/williamdar/curso/1802-accesibilidad-web/diploma/detalle/" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/certificates/Accesibilidad.PNG" alt="Project Picture">
+            </a>
+          </div>
+          <div class="app__certificate-container">
+            <a href="https://platzi.com/p/williamdar/curso/2337-animaciones-css/diploma/detalle/" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/certificates/Animaciones.PNG" alt="Project Picture">
+            </a>
+          </div>
+          <div class="app__certificate-container">
+            <a href="https://platzi.com/p/williamdar/curso/2985-api/diploma/detalle/" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/certificates/Api.PNG" alt="Project Picture">
+            </a>
+          </div>
+          <div class="app__certificate-container">
+            <a href="https://platzi.com/p/williamdar/curso/2942-api-profesional/diploma/detalle/" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/certificates/ApiJs.PNG" alt="Project Picture">
+            </a>
+          </div>
+          <div class="app__certificate-container">
+            <a href="https://platzi.com/p/williamdar/curso/3175-asincronismo-js/diploma/detalle/" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/certificates/Asincronismo.PNG" alt="Project Picture">
+            </a>
+          </div>
+          <div class="app__certificate-container">
+            <a href="https://platzi.com/p/williamdar/curso/3213-javascript-closures-scope/diploma/detalle/" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/certificates/Closure.PNG" alt="Project Picture">
+            </a>
+          </div>
+          <div class="app__certificate-container">
+            <a href="https://platzi.com/p/williamdar/curso/2474-css-grid/diploma/detalle/" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/certificates/Grid.PNG" alt="Project Picture">
+            </a>
+          </div>
+          <div class="app__certificate-container">
+            <a href="https://platzi.com/p/williamdar/curso/1867-devtools/diploma/detalle/" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/certificates/Devtools.PNG" alt="Project Picture">
+            </a>
+          </div>
+          <div class="app__certificate-container">
+            <a href="https://platzi.com/p/williamdar/curso/2229-flexbox-css-grid/diploma/detalle/" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/certificates/Flex.PNG" alt="Project Picture">
+            </a>
+          </div>
+          <div class="app__certificate-container">
+            <a href="https://platzi.com/p/williamdar/curso/3504-ecmascript-6/diploma/detalle/" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/certificates/Ecma.PNG" alt="Project Picture">
+            </a>
+          </div>
+          <div class="app__certificate-container">
+            <a href="https://platzi.com/p/williamdar/curso/2156-estructuras-datos/diploma/detalle/" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/certificates/Estructura.PNG" alt="Project Picture">
+            </a>
+          </div>
+          <div class="app__certificate-container">
+            <a href="https://platzi.com/p/williamdar/curso/2008-html-css/diploma/detalle/" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/certificates/Html.PNG" alt="Project Picture">
+            </a>
+          </div>
+          <div class="app__certificate-container">
+            <a href="https://platzi.com/p/williamdar/curso/2467-frontend-developer/diploma/detalle/" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/certificates/Frontend.PNG" alt="Project Picture">
+            </a>
+          </div>
+        </div>
+        <div class="technologies" id="technologies"></div>
+      </main>
     </div>
-</body>
+  </body>
 </html>

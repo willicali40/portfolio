@@ -27,7 +27,7 @@ body {
 
 .app__container {
     width: 85%;
-    height: 100vh;
+    height: auto;
     margin: 0 auto;
     max-width: 800px;
 }
@@ -79,13 +79,14 @@ header h2 {
     width: 1.5rem;
     height: 1.5rem;
 }
-.downloadCvBtn {
+.app__downloadCvBtn {
     margin: .5rem auto;
     width: 8rem;
     height: 2.8rem;
     background-color: var(--btns-color);
     border-radius: .5rem;
     border: none;
+    cursor: pointer;
 }
 
 nav {
@@ -114,4 +115,41 @@ nav ul li a {
     text-decoration: none;
     color: var(--typography-color);
     font-size: .8rem;
+}
+
+.app__projects {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.app__project-container {
+    width: 100%;
+    height: auto;
+    margin: 1rem auto;
+}
+.app__projects img {
+    width: 100%;
+    height: auto;
+    border-radius: .5rem;
+}
+
+.app__certificates {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.app__certificate-container {
+    width: 100%;
+    height: auto;
+    margin: 1rem auto;
+}
+
+.app__certificates img {
+    width: 100%;
+    height: auto;
+    border-radius: .5rem;
 }
