@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Welcome to my portfolio, where you'll find my best projects and certifications as well as technologies y know">
     <title>William David | Developer</title>
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" media="all" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,7 +24,7 @@
         <div class="app__social-links">
           <ul>
             <li>
-              <a href="https://www.linkedin.com/in/willicali40/"
+              <a href="https://www.linkedin.com/in/willicali40/" target="_blank"
                 ><img
                   class="app__social-links-icons"
                   src="./assets/Icons/linkedin.png"
@@ -32,7 +32,7 @@
               /></a>
             </li>
             <li>
-              <a href="https://github.com/willicali40"
+              <a href="https://github.com/willicali40" target="_blank"
                 ><img
                   class="app__social-links-icons"
                   src="./assets/Icons/github (1).png"
@@ -45,16 +45,16 @@
           <a href="./assets/William_David_Developer.pdf" download="william-cv">Download cv</a>
         </button>
       </header>
-      <nav>
+      <nav id="navbar">
         <ul>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#certificates">Certificates</a></li>
-          <li><a href="#technologies">Technologies</a></li>
+          <li><a href="#projects" id="projects">Projects</a></li>
+          <li><a href="#certificates" id="certificates">Certificates</a></li>
+          <li><a href="#technologies" id="technologies">Technologies</a></li>
         </ul>
       </nav>
       <main>
         <!-- projects -->
-        <div class="app__projects" id="projects">
+        <div class="app__projects" id="projects_container">
           <div class="app__project-container">
             <a href="https://luxury-dango-0ccb37.netlify.app/" target="_blank" rel="noopener noreferrer">
               <img src="./assets/YouTubeClone.PNG" alt="Project Picture">
@@ -92,7 +92,7 @@
           </div>
         </div>
         <!-- certificates -->
-        <div class="app__certificates" id="certificates">
+        <div class="app__certificates" id="certificates_container">
           <div class="app__certificate-container">
             <a href="https://platzi.com/p/williamdar/curso/2332-javascript-poo/diploma/detalle/" target="_blank" rel="noopener noreferrer">
               <img src="./assets/certificates/POO.PNG" alt="Project Picture">
@@ -169,7 +169,8 @@
             </a>
           </div>
         </div>
-        <div class="app__technologies" id="technologies">
+        <!-- technologies -->
+        <div class="app__technologies" id="technologies_container">
           <h2>Frontend Technologies</h2>
           <div class="app__technologies-container">
             <div class="app__technologies-component">
@@ -218,5 +219,6 @@
         </div>
       </main>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
