@@ -1,155 +1,357 @@
 :root {
-    --dark-background-color: #161616;
-    --light-background-color: #222121;
-    --btns-color: #14FFEC;
-    --others-color: #0D7377;
-    --typography-color: #fff;
-    --biggest-font-size: 700;
-    --medium-font-size: 600;
-    --regular-font-size: 500;
-    --light-font-size: 400;
-    --small-font-size: 300;
-    --x-small-font-size: 200;
+  --dark-background-color: #161616;
+  --light-background-color: #222121;
+  --btns-color: #75afff;
+  --others-color: #0e898d;
+  --typography-color: #fff;
+  --typography-light-color: #eceaeab4;
+  --biggest-font-size: 700;
+  --medium-font-size: 600;
+  --regular-font-size: 500;
+  --light-font-size: 400;
+  --small-font-size: 300;
+  --x-small-font-size: 200;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Nunito', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
 }
 
 body {
-    font-size: 16px;
-    background-color: var(--dark-background-color);
-    color: var(--typography-color);
+  font-size: 16px;
+  background-color: var(--dark-background-color);
+  color: var(--typography-color);
 }
 
 .app__container {
-    width: 85%;
-    height: auto;
-    margin: 0 auto;
-    max-width: 800px;
+  width: 85%;
+  height: auto;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 header {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
 header a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .app__profile-photo {
-    width: 8rem;
-    height: 8rem;
-    border-radius: 50%;
-    margin: 1rem auto;
+  width: 8rem;
+  height: 8rem;
+  margin: .8rem;
+  border-radius: 50%;
+  background-image: url(../assets/IMG-20221203-WA0009.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: .2rem solid #fff;
 }
 
 header h2 {
-    margin: .5rem auto;
+  font-size: 1.5rem;
+  margin: 0.5rem auto;
+}
+
+header p {
+  font-size: .9rem;
+  color: var(--typography-light-color);
 }
 
 .app__social-links {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    margin: .5rem auto 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem auto 0;
 }
 
 .app__social-links ul {
-    display: flex;
-    margin: .5rem auto;
+  display: flex;
+  margin: 0.5rem auto;
 }
 
 .app__social-links ul li {
-    list-style: none;
-    margin: .3rem;
+  list-style: none;
+  margin: 0.3rem 0.5rem;
 }
 
 .app__social-links-icons {
-    width: 1.5rem;
-    height: 1.5rem;
-}
-.app__downloadCvBtn {
-    margin: .5rem auto;
-    width: 8rem;
-    height: 2.8rem;
-    background-color: var(--btns-color);
-    border-radius: .5rem;
-    border: none;
-    cursor: pointer;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
+.app__downloadCvBtn {
+  margin: 0.5rem auto;
+  width: 8rem;
+  height: 2.8rem;
+  background-color: var(--btns-color);
+  font-weight: var(--small-font-size);
+  letter-spacing: 0.009rem;
+  border-radius: 0.5rem;
+  border: .2rem solid #fff;
+  cursor: pointer;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  text-align: center;
+}
+
+.app__downloadCvBtn a {
+  color: var(--typography-color);
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}
+
+
 nav {
-    width: 100%;
-    height: 3rem;
-    display: flex;
-    justify-content: center;
-    margin: .5rem auto;
-    padding: .5rem;
-    background-color: var(--light-background-color);
-    border-radius: .5rem;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  background-color: var(--light-background-color);
+  border-radius: 0.5rem;
 }
 
 nav ul {
-    display: flex;
-    display: flex;
-    justify-content: space-around;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 nav ul li {
-    list-style: none;
-    margin: .3rem;
+  list-style: none;
+  margin: 0.3rem;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: var(--typography-color);
-    font-size: .8rem;
+  text-decoration: none;
+  color: var(--typography-color);
+  font-size: 0.8rem;
+}
+
+nav > ul > li:hover {
+  border-bottom: 0.1rem solid #75afff;
+  transition: ease-in-out;
+  transition-duration: 0.3s;
 }
 
 .app__projects {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .app__project-container {
-    width: 100%;
-    height: auto;
-    margin: 1rem auto;
+  width: 100%;
+  height: auto;
+  margin: 1rem auto;
 }
 .app__projects img {
-    width: 100%;
-    height: auto;
-    border-radius: .5rem;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
 }
 
 .app__certificates {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .app__certificate-container {
-    width: 100%;
-    height: auto;
-    margin: 1rem auto;
+  width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: .2rem;
 }
 
 .app__certificates img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.app__technologies {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.app__technologies h2 {
+  font-size: 1rem;
+  margin: 2rem auto 1rem;
+}
+
+.app__technologies-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.app__technologies-component {
+  width: 5.5rem;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  margin: 0.8rem;
+}
+
+.app__technologies-component img {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0.2rem;
+}
+
+.app__technologies-component_info {
+  width: 3rem;
+}
+
+.app__technologies-component_info h3 {
+  font-size: 0.8rem;
+}
+
+.app__technologies-component_info p {
+  font-size: 0.8rem;
+  font-weight: var(--x-small-font-size);
+  color: var(--typography-light-color);
+}
+
+
+@media (min-width: 768px) {
+  header h2 {
+    font-size: 2rem;
+    margin: 0.5rem auto;
+  }
+
+  header p {
+    font-size: 1rem;
+    color: var(--typography-light-color);
+  }
+  .app__downloadCvBtn {
+    width: 20rem;
+    height: 3rem;
+  }
+
+  .app__downloadCvBtn a {
+  color: var(--typography-color);
+  }
+
+  nav ul {
+    justify-content: space-evenly;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  .app__technologies h2 {
+    font-size: 2rem;
+  }
+
+  .app__technologies-component {
+    width: 11rem;
+    justify-content: space-between;
+  }
+
+  .app__technologies-component img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .app__technologies-component_info {
+    text-align: left;
+    width: 70%;
+  }
+
+  .app__technologies-component_info h3 {
+    font-size: 1.2rem;
+  }
+
+  .app__technologies-component_info p {
+    font-size: 1rem;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .app__profile-photo {
+    width: 15rem;
+    height: 15rem;
+    margin: 1rem;
+  }
+
+  header h2 {
+    font-size: 2.5rem;
+  }
+
+  header p {
+    font-size: 1.5rem;
+    margin: .5rem;
+  }
+
+  .app__social-links-icons {
+    width: 2.3rem;
+    height: 2.3rem;
+    margin: .5rem;
+  }
+
+  .app__downloadCvBtn {
+    width: 20rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
+
+  .app__downloadCvBtn a {
+  color: var(--typography-color);
+  font-weight: var(--medium-font-size);
+  }
+
+  .app__projects {
     width: 100%;
-    height: auto;
-    border-radius: .5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .app__project-container {
+    width: 45%;
+  }
+
+  .app__certificates {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .app__certificate-container {
+    width: 45%;
+  }
+
+  .app__technologies-container {
+    width: 80%;
+    margin: 3rem auto;
+  }
 }
